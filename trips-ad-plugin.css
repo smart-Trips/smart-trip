@@ -1,0 +1,380 @@
+/**
+ * 	@reset 清除
+ */
+body{width: 1340px; height: 1231px; background: url("sanya.png") no-repeat; background-size:1349px 1231px; background-position: center; margin: 0px; padding: 0px;}
+div#trips-ad-plugin ul{
+	margin: 0;
+	padding-left: 0px;
+}
+
+
+div#header{
+	background: greenyellow;
+	display: block;
+	width: 80%;
+	height: 2000px;
+	position: absolute;
+	left: 10%;
+}
+
+
+/**
+ * 	@插件主体样式。
+ */
+div#trips-ad-plugin{
+	font-family: "Helvetica Neue",Helvetica,Microsoft Yahei,Hiragino Sans GB,WenQuanYi Micro Hei,sans-serif;
+	display: block;
+	width: 300px;
+	/*height: 400px;*/
+	height: auto;
+	background: white;
+	border: 1px solid #ccc;
+	position: fixed;
+	left: -302px;
+	top: 50%;
+	-webkit-transform: translateY(-50%);-moz-transform: translateY(-50%);-o-transform: translateY(-50%);-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	z-index: 999;
+}
+
+/*******************************************************************************************************************
+ *  @第一个页面的样式开始。
+ */
+
+div#trips-ad-plugin-one h2, div#trips-ad-plugin-two h2{
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	margin: 0;
+	font-size: 14px;
+	text-indent: 10px;
+	color: #666;
+	font-weight: normal;
+}
+
+
+
+/**
+ * 	第一个页面的图片组样式
+ */
+div#trips-ad-plugin-one>ul{
+	display: block;
+	width: 100%;
+	height: 324px;
+	overflow-y: auto;
+	list-style: none;
+}
+div#trips-ad-plugin-one ul li{
+	width: 88px;
+	/*height: 102px;*/
+	float: left;
+	margin: 3px;
+}
+div#trips-ad-plugin-one ul li img{
+	width: 100%;
+	height: 82px;
+	cursor: pointer;
+	opacity: 1;
+	/*兼容IE*/
+	filter: alpha(opacity=100);
+}
+div#trips-ad-plugin-one ul li img.check{
+	width: 84px;
+	height: 78px;
+	opacity: 0.5;
+	/*兼容IE*/
+	filter: alpha(opacity=50);
+	border: solid 2px green;
+	/*border: solid 2px green;*/
+}
+/*#trips-ad-plugin-one li span{ font-size: 12px; color: #666; display: inline-block; width: 100%; overflow: hidden; height: 20px; line-height: 20px; text-align: center;}*/
+
+/**
+ * 	第一个选项的按钮组样式。
+ */
+div#trips-ad-plugin-one-buttons{
+	display: inline-block;
+	width: 100%;
+	height: 35px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	float: left;
+	background: #efefef;
+}
+
+/**
+ * 	分页菜单按钮组
+ */
+div#trips-ad-plugin-one-buttons ul{
+	display: block;
+	width: 200px;
+	height: 30px;
+	float: left;
+	list-style: none;
+}
+div#trips-ad-plugin-one-buttons ul li{
+	margin: 3px 3px 0px;
+	width: 40px;
+	height: 22px;
+	line-height: 22px;
+	float: left;
+	border: 1px solid #0066FF;
+	/*background: #06f;*/
+	border-radius: 8px;
+	text-align: center;
+	font-weight: bold;
+	cursor: pointer;
+	color: #0066FF;
+}
+div#trips-ad-plugin-one-buttons ul li:link{
+	background: none;
+}
+div#trips-ad-plugin-one-buttons ul li:active{
+	background-color: #5bc0de;
+	border-color: #4cae4c;
+	color: #fff;
+	-moz-user-select: none;
+	background-image: none;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 14px;
+	font-weight: 400;
+	margin-bottom: 0;
+	padding: 6px 12px;
+	text-align: center;
+	vertical-align: middle;
+	white-space: nowrap;
+}
+
+/*第一页面的确定按钮样式*/
+div#trips-ad-plugin-one-buttons img{float: left;
+	width: 54px;
+	height: 30px;
+	margin-left: 10px;
+	margin-top: 5px;}
+div#trips-ad-plugin-one-buttons span{
+	float: right;
+	margin-right: 16px;
+	min-width: 48px;
+	height: 20px;
+	line-height: 20px;
+	display: inline-block;
+	background-color: #5bc0de;
+	border-color: #4cae4c;
+	color: #fff;
+	-moz-user-select: none;
+	background-image: none;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 400;
+	margin-bottom: 0;
+	padding: 6px 12px;
+	text-align: center;
+	vertical-align: middle;
+	white-space: nowrap;
+}
+div#trips-ad-plugin-one-buttons span:link{
+	background: #007aff;
+}
+div#trips-ad-plugin-one-buttons span:active{
+	background: #0062cc;
+}
+
+/**
+ * 	@外部按钮样式:点击展示广告
+ */
+div#trips-ad-plugin-button{
+	padding: 12px;
+	background: #5bc0de;
+	position: absolute;
+	line-height: 24px;
+	color: white;
+	top: 50%;
+	-webkit-transform: translateY(-50%);-ms-transform: translateY(-50%);-o-transform: translateY(-50%);-moz-transform: translateY(-50%);
+	transform: translateY(-50%);
+	left: 300px;
+	text-align: center;
+	cursor: pointer;
+	border-bottom-right-radius: 10px;
+	border-top-right-radius: 10px;
+	font-size: 16px;
+}
+
+
+/******************************************************************************************************************************
+ * 	@第二个页面的样式开始。
+ */
+div#trips-ad-plugin-two{
+	display: none;
+}
+div#trips-ad-plugin-two #trip-word2{
+	display: none;
+}
+
+div#trips-ad-plugin-two>h2>span:link{
+	background: #007aff;
+}
+div#trips-ad-plugin-two>h2>span:active{
+	background: #0062cc;
+}
+/*第二页内容区样式。*/
+div#trips-ad-plugin-two > ul.content{
+	list-style: none;
+	width: 100%;
+	height: 354px;
+	overflow-y: scroll;
+}
+
+div#trips-ad-plugin-two > ul.content > li{
+	padding-left: 10px; padding-right: 10px;
+	cursor: pointer;
+	font-size: 12px; color: #666;
+}
+div#trips-ad-plugin-two > ul.content > li:active{
+	background: #eee;
+}
+div#trips-ad-plugin-two > ul.content > li >img{
+	width: 100%; margin-top: 5px;
+	height: auto;}
+div#trips-ad-plugin-two > ul.content > li >div{
+
+}
+div#trips-ad-plugin-two > ul.content > li > div >h2{
+	color: #333;
+	display: block;
+	background: none;
+	font-size: 14px;
+	word-break: normal; 
+	overflow: hidden;
+	height: 24px;line-height: 24px;
+	text-overflow: ellipsis;
+	text-indent: 0px;
+}
+div#trips-ad-plugin-two > ul.content > li >div > span{
+	display: block;
+	margin-bottom: 5px;
+	width: 100%;
+	/*text-indent: 10px;*/
+	font-size: 12px;
+	color: #666;
+	line-height: 20px;
+	word-wrap: break-word;
+	word-break: normal; 
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+/*第二页按钮组样式。*/
+div#trips-ad-plugin-two > ul.buttons{
+	display: block;
+	width: 100%;
+	height: 35px;
+	padding-top: 5px; padding-bottom: 5px;
+	float: left;
+	list-style: none;
+	background: #eee;
+}
+ul.buttons li img{
+	float: left;
+	width: 54px;
+	height: 30px;
+	margin-left: 10px;
+	margin-top: 5px;
+}
+ul.buttons li>span{
+	display: block;
+	text-align: center;
+	width: 50px;
+	height: 30px;
+	line-height: 30px;
+	background: #5bc0de;
+	float: right;
+	font-size: 24px;
+	font-weight: bold;
+	border-radius: 4px;
+	margin: 3px 16px 0px 0px;
+	cursor: pointer;
+	color: #fff;
+}
+/*div#trips-ad-plugin-two > ul.buttons > li{*/
+	/*margin: 5px 5px 0px;*/
+	/*width: 40px;*/
+	/*height: 22px;*/
+	/*line-height: 22px;*/
+	/*float: left;*/
+	/*border: 1px solid #0066FF;*/
+	/*border-radius: 8px;*/
+	/*text-align: center;*/
+	/*font-weight: bold;*/
+	/*cursor: pointer;*/
+	/*color: #0066FF;*/
+/*}*/
+/*div#trips-ad-plugin-two > ul.buttons > li:active{*/
+	/*background: #0062cc;*/
+/*}*/
+
+/**********************************************************************************************************
+ * 	@遮罩层 
+ */
+div#trips-ad-plugin div#trips-mask{
+	width: 302px;
+	height: 403px;
+	position: absolute;
+	top: 0;
+	background: grey;
+	opacity: 0.5;
+	filter: alpha(opacity = 50);
+	display: none;
+}
+div#trips-ad-plugin div#trips-mask h2{
+	display: block;
+	margin: 185px auto;
+	width: 100%;
+	height: 30px;
+	text-align: center;
+	color: black;
+}
+.nav-list{ background-color: #eee; font-size: 12px; margin: 0px;color: #555; padding-top: 10px; padding-bottom: 10px; text-align: center;}
+.nav-list li{ display: inline-block; color: #555; padding-left: 3px; padding-right: 3px;}
+.nav-list li a{color: #555; text-decoration: none;}
+.form-con{ background-color: #fff; margin-left: 15px;
+	background-image: none;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+	color: #555;
+	font-size: 14px;
+	line-height: 1.42857;
+	padding: 6px 12px;
+	transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+	width: 90px;}
+.form-con:focus {
+	border-color: #66afe9;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(102, 175, 233, 0.6);
+	outline: 0 none;
+}
+.search-div{ text-align: center; background-color: #eee; padding-bottom: 10px;}
+.search-div .form-con{ margin-right: 10px; width: 160px; margin-left: 0px;}
+.search-div button{
+	background-color: #5bc0de;
+	border-color: #4cae4c;
+	color: #fff;
+	-moz-user-select: none;
+	background-image: none;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 14px;
+	font-weight: 400;
+	margin-bottom: 0;
+	width: 70px;
+	height: 33px;
+	text-align: center;
+	vertical-align: middle;
+	white-space: nowrap;
+}
